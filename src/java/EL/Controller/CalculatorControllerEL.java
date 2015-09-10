@@ -38,25 +38,25 @@ public class CalculatorControllerEL extends HttpServlet {
         String action = request.getParameter("action");
         AreaCalculator calc = new AreaCalculator();
 
-        if (action.equals("rectangle")) {
-            double length = Double.parseDouble(request.getParameter("length"));
-            double width = Double.parseDouble(request.getParameter("width"));
-
+       if (action.equals("rectangle")) {
+            String length = request.getParameter("length");
+            String width = request.getParameter("width");
+        
             double rectangleArea = calc.calculateRectangle(length, width);
-            request.setAttribute("rectangleArea", "Area of the rectangle is " + rectangleArea);
-
+            request.setAttribute("rectangleArea", rectangleArea);
+            
         } else if (action.equals("circle")) {
-            double radius = Double.parseDouble(request.getParameter("radius"));
-
+            String radius = request.getParameter("radius");
+            
             double circleArea = calc.calculateCircle(radius);
-            request.setAttribute("circleArea", "Area of the circle is " + circleArea);
-
+            request.setAttribute("circleArea", circleArea);
+            
         } else if (action.equals("triangle")) {
-            double height = Double.parseDouble(request.getParameter("height"));
-            double base = Double.parseDouble(request.getParameter("base"));
-
+            String height = request.getParameter("height");
+            String base = request.getParameter("base");
+            
             double triangleArea = calc.calculateTriangle(height, base);
-            request.setAttribute("triangleArea", "Area of the triangle is " + triangleArea);
+            request.setAttribute("triangleArea", triangleArea);
         }
 
         RequestDispatcher view

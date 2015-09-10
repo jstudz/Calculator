@@ -30,8 +30,8 @@ public class CalculatorController extends HttpServlet {
         
         AreaCalculator calc = new AreaCalculator();
         
-        double length = Double.parseDouble(request.getParameter("length"));
-        double width = Double.parseDouble(request.getParameter("width"));
+        String length = request.getParameter("length");
+        String width = request.getParameter("width");
         
         double area = calc.calculateArea(length, width);
         

@@ -39,21 +39,21 @@ public class CalculatorControllerLab3 extends HttpServlet {
         AreaCalculator calc = new AreaCalculator();
         
         if (action.equals("rectangle")) {
-            double length = Double.parseDouble(request.getParameter("length"));
-            double width = Double.parseDouble(request.getParameter("width"));
+            String length = request.getParameter("length");
+            String width = request.getParameter("width");
         
             double rectangleArea = calc.calculateRectangle(length, width);
             request.setAttribute("rectangleArea", rectangleArea);
             
         } else if (action.equals("circle")) {
-            double radius = Double.parseDouble(request.getParameter("radius"));
+            String radius = request.getParameter("radius");
             
             double circleArea = calc.calculateCircle(radius);
             request.setAttribute("circleArea", circleArea);
             
         } else if (action.equals("triangle")) {
-            double height = Double.parseDouble(request.getParameter("height"));
-            double base = Double.parseDouble(request.getParameter("base"));
+            String height = request.getParameter("height");
+            String base = request.getParameter("base");
             
             double triangleArea = calc.calculateTriangle(height, base);
             request.setAttribute("triangleArea", triangleArea);
