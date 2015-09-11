@@ -35,7 +35,7 @@ public class CalculatorControllerLab3 extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         
-         String action = request.getParameter("action");
+        String action = request.getParameter("action");
         AreaCalculator calc = new AreaCalculator();
         
         if (action.equals("rectangle")) {
@@ -60,7 +60,7 @@ public class CalculatorControllerLab3 extends HttpServlet {
         }
         
         RequestDispatcher view
-                    = request.getRequestDispatcher("areaCalcLab3.jsp");
+                    = request.getRequestDispatcher("Lab3/areaCalculator.jsp");
             view.forward(request, response);
         
     }

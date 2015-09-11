@@ -38,7 +38,7 @@ public class CalculatorController extends HttpServlet {
         request.setAttribute("area", area);
         
         RequestDispatcher view
-                    = request.getRequestDispatcher("calcResultLab1.jsp");
+                    = request.getRequestDispatcher("Lab1/calculatorResults.jsp");
             view.forward(request, response);
     }
 
