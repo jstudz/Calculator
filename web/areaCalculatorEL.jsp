@@ -15,7 +15,7 @@
                     <div class="col-md-4"> 
                         <p>Use this form to calculate the area of a rectangle</p>
                         <b>Area of a rectangle is the LENGTH x WIDTH</b>
-                        <form id="rectangleForm" name="rectangleForm" method="POST" action="../calculateEL?action=rectangle">
+                        <form id="rectangleForm" name="rectangleForm" method="POST" action="calculateEL?action=rectangle">
                             <p>Length:<input type="text" id="length" name="length" value="" placeholder="e.g. 5.65"/></p>
                             <p>Width:<input type="text" id="width" name="width" value="" placeholder="e.g. 7.54"/></p>
                             <p><input type="submit" name="submit" value="Calculate Area"/></p>
@@ -28,7 +28,7 @@
                     <div class="col-md-4">
                         <p>Use this form to calculate the area of a circle</p>
                         <b>Area of a circle is the Pi * r ^ 2</b>
-                        <form id="circleForm" name="circleForm" method="POST" action="../calculateEL?action=circle">
+                        <form id="circleForm" name="circleForm" method="POST" action="calculateEL?action=circle">
                             Radius:<input type="text" id="radius" name="radius" value="" placeholder="e.g. 8.56"/>
                             <input type="submit" name="submit" value="Calculate Area"/>
                         </form>
@@ -42,7 +42,7 @@
                     <div class="col-md-4">
                         <p>Use this form to calculate the area of a rectangle</p>
                         <b>Area of a rectangle is the BASE * HEIGHT / 2</b>
-                        <form id="triangleForm" name="triangleForm" method="POST" action="../calculateEL?action=triangle">
+                        <form id="triangleForm" name="triangleForm" method="POST" action="calculateEL?action=triangle">
                             <p>Base:<input type="text" id="base" name="base" value="" placeholder="e.g. 5.65"/></p>
                             <p>Height:<input type="text" id="height" name="height" value="" placeholder="e.g. 7.54"/></p>
                             <p><input type="submit" name="submit" value="Calculate Area"/></p>

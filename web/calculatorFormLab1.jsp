@@ -13,7 +13,7 @@
             <div class="panel-body">
                 <p>Use this form to calculate the area of a rectangle</p>
                 <h3>Area of a rectangle is the LENGTH x WIDTH</h3>
-                <form id="rectangleForm" name="rectangleForm" method="POST" action="../calculateLab1">
+                <form id="rectangleForm" name="rectangleForm" method="POST" action="calculateLab1">
                     <input type="text" id="length" name="length" value="" placeholder="e.g. 5.65"/>
                     <input type="text" id="width" name="width" value="" placeholder="e.g. 7.54"/>
                     <input type="submit" name="submit" value="Calculate Area"/>
