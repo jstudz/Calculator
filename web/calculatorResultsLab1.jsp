@@ -8,6 +8,26 @@
         <title>Calculator Results for Lab 1</title>
     </head>
     <body>
+        <nav class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse-menu">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="collapse-menu">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="calculatorFormLab1.jsp">Lab 1</a></li>
+                        <li><a href="rectangleCalculatorLab2.jsp">Lab 2</a></li>
+                        <li><a href="areaCalculatorLab3.jsp">Lab 3</a></li>
+                        <li><a href="areaCalculatorEL.jsp">EL Lab</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
         <div class="panel panel-primary">
             <div class="panel-heading"><h1>Area Calculator</h1></div>
             <div class="panel-body">
