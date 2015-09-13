@@ -60,7 +60,7 @@ public class CalculatorControllerEL extends HttpServlet {
         }
 
         RequestDispatcher view
-                = request.getRequestDispatcher("EL/areaCalculator.jsp");
+                = request.getRequestDispatcher("areaCalculatorEL.jsp");
         view.forward(request, response);
     }
 

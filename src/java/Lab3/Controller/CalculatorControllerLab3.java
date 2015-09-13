@@ -60,7 +60,7 @@ public class CalculatorControllerLab3 extends HttpServlet {
         }
         
         RequestDispatcher view
-                    = request.getRequestDispatcher("Lab3/areaCalculator.jsp");
+                    = request.getRequestDispatcher("areaCalculatorLab3.jsp");
             view.forward(request, response);
         
     }

@@ -11,6 +11,7 @@
             <div class="panel-heading"><h1>Area Calculator</h1></div>
             <div class="panel-body">
                 <div class="row">
+
                     <div class="col-md-4"> 
                         <p>Use this form to calculate the area of a rectangle</p>
                         <b>Area of a rectangle is the LENGTH x WIDTH</b>
@@ -20,7 +21,7 @@
                             <p><input type="submit" name="submit" value="Calculate Area"/></p>
                         </form>
                         <b>
-                           ${rectangleArea}
+                            ${rectangleArea}
                         </b>
                     </div>
 
@@ -36,6 +37,8 @@
                         </b>
                     </div>
 
+
+
                     <div class="col-md-4">
                         <p>Use this form to calculate the area of a rectangle</p>
                         <b>Area of a rectangle is the BASE * HEIGHT / 2</b>
@@ -48,6 +51,7 @@
                             ${triangleArea}
                         </b>
                     </div>
+
                 </div>
             </div>
     </body>
