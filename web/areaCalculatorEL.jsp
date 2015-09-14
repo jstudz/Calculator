@@ -4,6 +4,7 @@
     <head>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
         <title>Lab 3 Calculator</title>
     </head>
     <body>
@@ -41,7 +42,7 @@
                             <p><input type="submit" name="submit" value="Calculate Area"/></p>
                         </form>
                         <b>
-                            ${rectangleArea}
+                            <fmt:formatNumber value="${rectangleArea}" type="NUMBER" />
                         </b>
                     </div>
 
@@ -53,7 +54,7 @@
                             <input type="submit" name="submit" value="Calculate Area"/>
                         </form>
                         <b>
-                            ${circleArea}
+                            <fmt:formatNumber value="${circleArea}" type="NUMBER" />    
                         </b>
                     </div>
 
@@ -68,7 +69,7 @@
                             <p><input type="submit" name="submit" value="Calculate Area"/></p>
                         </form>
                         <b>
-                            ${triangleArea}
+                            <fmt:formatNumber value="${triangleArea}" type="NUMBER" />    
                         </b>
                     </div>
 
