@@ -21,7 +21,7 @@ import javax.servlet.http.HttpServletResponse;
  */
 @WebServlet(name = "CalculatorControllerEL", urlPatterns = {"/calculateEL"})
 public class CalculatorControllerEL extends HttpServlet {
-
+    private final static String DESTINATION_VIEW = "areaCalculatorEL.jsp";
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
@@ -60,7 +60,7 @@ public class CalculatorControllerEL extends HttpServlet {
         }
 
         RequestDispatcher view
-                = request.getRequestDispatcher("areaCalculatorEL.jsp");
+                = request.getRequestDispatcher(DESTINATION_VIEW);
         view.forward(request, response);
     }
 

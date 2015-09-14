@@ -21,7 +21,7 @@ import javax.servlet.http.HttpServletResponse;
  */
 @WebServlet(name = "CalculatorControllerLab3", urlPatterns = {"/calculateLab3"})
 public class CalculatorControllerLab3 extends HttpServlet {
-
+    private final static String DESTINATION_VIEW = "areaCalculatorLab3.jsp";
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
@@ -60,7 +60,7 @@ public class CalculatorControllerLab3 extends HttpServlet {
         }
         
         RequestDispatcher view
-                    = request.getRequestDispatcher("areaCalculatorLab3.jsp");
+                    = request.getRequestDispatcher(DESTINATION_VIEW);
             view.forward(request, response);
         
     }
