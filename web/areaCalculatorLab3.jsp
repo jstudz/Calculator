@@ -20,6 +20,7 @@
                 </div>
                 <div class="collapse navbar-collapse" id="collapse-menu">
                     <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="calculatorFormLab1.jsp">Lab 1</a></li>
                         <li><a href="rectangleCalculatorLab2.jsp">Lab 2</a></li>
                         <li><a href="areaCalculatorLab3.jsp">Lab 3</a></li>
